@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const NavBar = () => {
 	return (
 		<header className='h-16'>
-			<nav className='bg-green-500 h-full w-full px-[20px] max-w-[1220px] mx-auto flex justify-between items-center'>
+			<nav className='h-full w-full px-[20px] max-w-[1230px] mx-auto flex justify-between items-center'>
 				<span className='text-3xl'>iRepair</span>
 				<ul className='space-x-5'>
 					<NavLink to='/'>Home</NavLink>
