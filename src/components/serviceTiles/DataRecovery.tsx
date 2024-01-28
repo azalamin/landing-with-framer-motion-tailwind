@@ -1,6 +1,17 @@
+import useScrollGrow from "@/hooks/useScrollGrow";
+import { motion } from "framer-motion";
+
 const DataRecovery = () => {
+	const { componentRef, scaleValues, opacityValues } = useScrollGrow();
 	return (
-		<div className='bg-light-gray h-[448px] col-span-12 md:col-span-6 lg:col-span-7 rounded-xl'>
+		<motion.div
+			className='bg-light-gray h-[448px] col-span-12 md:col-span-6 lg:col-span-7 rounded-xl'
+			style={{
+				scale: scaleValues,
+				opacity: opacityValues,
+			}}
+			ref={componentRef}
+		>
 			<div className='p-7'>
 				<h4 className='text-xl font-semibold mb-16'>Data Recovery</h4>
 
@@ -10,7 +21,7 @@ const DataRecovery = () => {
 					Don’t worry, We will recover it for you
 				</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
