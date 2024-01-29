@@ -18,7 +18,7 @@ export const useGetServices = () => {
 			return services;
 		},
 		// gcTime: 5000, // it hold the cashed data until the time has been set, by default its time is 5 minutes
-		// staleTime: 7000, // it does not request to server to refetch data until the time has been set
+		// staleTime: 7000, // it does not request to server to refetch data until the time has been set. We can set //!Infinity for the no data change in the UI
 	});
 
 	return servicesData;
